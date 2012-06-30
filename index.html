@@ -1,0 +1,123 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script type="text/javascript" src="./scripts/PopUp.js"></script>
+<link rel="stylesheet" href="./recursos/css/Stylepopup.css" type="text/css" />
+    <title>OrderAnim - Ordenação e Animação</title>
+  </head>
+<body>
+
+<div ><center><h1>OrderAnim - Ordenação e Animcação</h1></center>
+    <br />
+    <table border="0" cellpadding="0" cellspacing="0" style="width: 80%; height: 30%; font-size: 13pt; font-style: normal; font-family: 'Times New Roman';">
+        <tr>
+            <td style="width: 84px; vertical-align:top; text-align: center;" >
+            <a href="http://www.ufrpe.br" >
+                <img src="recursos/images/images.jpg" id="IMG1" />
+                </a>
+            </td>
+            <td style="height: 99px; text-align: center; width: 601px;" valign="top">
+                Este projeto foi proposto na disciplina de Prática de Ensino de Algoritmos e Estrura
+                de Dados da
+                <br />
+                Universidade Federal Rural de Pernambuco(UFRPE),
+                <br />
+                e tem como objetivo, facilitar o entendimento de algoritmos de ordenação.<br />
+                Bom esta é uma versão alpha do software, que será atualizada em breve.<br />
+                O projeto foi implementado com o uso da biblioteca <a href="http://code.google.com/p/cakejs/">Cakejs</a>, que foi construída com o uso 					da nova tag Canvas do HTML5.
+                <br />
+                Com ela podemos desenvolver animações interessantes, e até mesmo jogos.<br />
+                O projeto OrderAnim, está sendo construído com Javascript.</td>
+        </tr>
+    </table>
+    <br />
+    <table style="width: 566px; font-weight: bold;">
+        <tr>
+            <td style="width: 96px">
+                Contribuintes:</td>
+            <td style="width: 254px">
+                Nielson Santana</td>
+            <td style="width: 248px">
+                nielsonnas[at]gmail.com</td>
+        </tr>
+        <tr>
+            <td style="width: 96px">
+            </td>
+            <td style="width: 254px">
+            Raphael Ribeiro
+                </td>
+            <td style="width: 248px">
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 96px">
+            </td>
+            <td style="width: 254px">
+            Danilo Soares
+                </td>
+            <td style="width: 248px">
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 96px">
+            </td>
+            <td style="width: 254px">
+            Tiago Gondim
+                </td>
+            <td style="width: 248px">
+            </td>
+        </tr>
+                <tr>
+            <td style="width: 96px">
+            </td>
+            <td style="width: 254px">
+            Dyego Carlos
+                </td>
+            <td style="width: 248px">
+            </td>
+        </tr>
+    </table>
+    <br />
+    <table style="width: 938px">
+        <tr>
+            <td style="width: 52px; height: 15px; font-weight: bold; font-size: 12pt; text-transform: capitalize; font-family: 'Times New Roman';">
+                Algoritmo de Ordenação</td>
+            <td style="width: 28px; height: 15px; font-weight: bold; font-size: 12pt; text-transform: capitalize; font-family: 'Times New Roman';">
+                Descrição</td>
+        </tr>
+        <tr>
+            <td style="width: 52px; font-weight: normal; font-size: 12pt; font-family: 'Times New Roman';">
+                <input id="btninsert" type="button" value="Insertion Sort" 
+                onclick="AbrirPopUp('SortingAlgorithms.html#mo=insert','Insertion Sort',1230,670)" /></td>
+            <td style="width: 273px; font-weight: normal; font-size: 12pt; font-family: 'Times New Roman';">
+            Insertion sort, ou ordenação por inserção, é um simples algoritmo de ordenação, eficiente na aplicação de uma pequena quantidade de elementos. Em termos gerais, ele percorre um vetor de elementos da esquerda para a direita e à medida que avança vai deixando os elementos mais à esquerda ordenados. O algoritmo de inserção funciona da mesma maneira com que muitas pessoas ordenam cartas em um jogo de baralho.
+            
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 52px; font-weight: normal; font-size: 12pt; font-family: 'Times New Roman';"><input id="Button1" type="button" value="Merge Sort" onclick="AbrirPopUp('SortingAlgorithms.html#mo=merge','Merge Sort',1230,670)" /></td>
+            <td style="width: 273px; font-weight: normal; font-size: 12pt; font-family: 'Times New Roman';">
+            </td>
+        </tr>
+    </table>
+    <br />
+
+<div style="overflow-x: hidden; overflow-y: hidden; width: 800px; height: 100px; position: relative; left: 0px; top: 0px;" id="divtexto"></div>
+	
+</div>
+
+	<p id="comparacoes">
+</p>
+	<p id="movimentos">
+</p>
+<p id="movimentos1">
+</p>
+<table border="0" cellspacing="0" cellpadding="0">
+	<tr><td id="celulaAnime"></td>
+	<td id="celulatexto"></td>
+	</tr>
+	
+</table>
+</body>
+</html>

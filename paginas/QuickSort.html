@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script type="text/javascript" src="../scripts/cake.js"></script>
+<script type="text/javascript" src="../scripts/sorting.js"></script>
+    <title>OrderAnim - Animation Sort Algorithms</title>
+  </head>
+<body>
+
+<div>
+<table border="0" cellspacing="0" cellpadding="0" style="font-style: normal; border-right: green 1px outset; border-top: green 1px outset; border-left: green 1px outset; border-bottom: green 1px outset; font-family: Georgia; width: 584px;">
+	<tr>
+		<td style="height: 24px; width: 160px;">Valor de 1 até 200</td>
+		<td style="height: 24px"><input type="text" name="some_name" value="90" onkeypress="if(event.keyCode=='13'){ PainelAnime.addRetangulo($('txtvalor').value); $('txtvalor').value = ''; $('txtvalor').focus();}" id="txtvalor" /></td>
+		<td rowSpan="2" style="width: 229px" ><input type="image" src="../recursos/images/add.png" name="some_name" value="Adicionar Coluna"  onclick="PainelAnime.addRetangulo($('txtvalor').value); $('txtvalor').value = ''; $('txtvalor').focus()" id="additem" />
+		<input type="image" name="some_name"  src="../recursos/images/delete.png" value="remover Coluna" onclick="PainelAnime.removeRetangulo();" id="removeitem" />
+		<input type="image" src="../recursos/images/pause.jpg" alt="Pause" value="Pausar" onclick="PainelAnime.stop()" id="pauseanime" />
+<input type="image" src="../recursos/images/play.png" alt="Play" value="Play" onclick="PainelAnime.play()" id="playanime" />
+<img src="../recursos/images/deficienteauditivo.png" alt="Audio" />
+</td>	
+    <td rowspan="2">
+        <div style="left: -79px; width: 20px; position: relative; top: -3px; height: 5px">
+            <input type="checkbox" onclick="if(this.checked==true){ alert('A acessibilidade irá funcionar bem no Google Chrome. Outra coisa importante, é que se você usar esse recurso para ordenar muitas colunas, o google irá descobrir que uma máquina está enviando requisições para o seu servidor.')}" value="Acessibilidade" id="audio" /></div>
+    </td>
+	</tr>
+	<tr><td style="width: 160px"></td></tr>
+	<tr> <td style="width: 160px">Método de ordenação</td> <td>
+	<select name="name" id="Sort">
+		<option value="insert" selected="true">Insert Sort</option>
+		<option value="merge">Merge Sort</option>
+		<option value="quick">Quick Sort</option>
+	</select>
+	</td> <td style="width: 229px"><input type="image" name="some_name" src="../recursos/images/sorting.gif"  onclick="Ordenacao($('Sort').value);" alt="Ordenação" value="Ordenar" id="sortAlgoritms" /> 
+          <td>
+          </td>
+	</tr>
+</table>
+            <div style="left: 704px; width: 519px; position: absolute; top: 8px; height: 117px;
+                 border-right: green 1px outset; border-top: green 1px outset; border-left: green 1px outset; border-bottom: green 1px outset;" id="debug">
+                <table style="width: 100%">
+                    <tr>
+                        <td style="width: 50%; height:100%">
+                            Debug, não está pronto ainda!</td>
+                        <td style="width: 50%; height:100%;">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+<div style="overflow-x: hidden; overflow-y: hidden; width: 656px; height: 43px; position: relative; font-size: 16pt; left: 0px; color: green; top: 0px;" id="divtexto"></div>
+	
+</div>
+    <br />
+<table border="0" cellspacing="0" cellpadding="0">
+    <tr><th id="Td1">Animação da Ordenação</th><th id="Td2" style="width: 92px">Pseudocodigo</th>
+    <th style="width: 92px">
+    </th><th id="Td3"></th>
+	</tr>
+	<tr><td style="border-right: green 1px outset; border-top: green 1px outset; border-left: green 1px outset; border-bottom: green 1px outset;" id="celulaAnime"></td>
+	<td style="border-right: green 1px outset; border-top: green 1px outset; border-left: green 1px outset; border-bottom: green 1px outset;" id="celulatexto" ></td><td style="width: 92px">
+        </td>
+        <td style="border-right: green 1px outset; border-top: green 1px outset; border-left: green 1px outset; border-bottom: green 1px outset; display:none;" id="celulaArvore" width="50%">
+        </td>
+	</tr>
+	
+</table>
+<div style="overflow-x: hidden; overflow-y: hidden; width: 200px; height: 50px; position: relative; display:none; font-size: 15pt; left: 0px; color: green; top: 0px;" id="frameaudio">
+            <br />
+</body>
+</html>
